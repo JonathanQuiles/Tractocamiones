@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+ <html lang="en" ng-app="myApp">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Para que se adapete a los dispositivos mas grandes-->
+    
+    <!-- LINKS de Bootrstrap y CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"><!--Bootstrap-->
+    <link rel="stylesheet" href="css/css.css"><!--CSS--> 
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"><!-- Iconos de font-awesome -->
+
+    
+    <!--Los "SCRIPTS" van en este orden o no funcionaran despues-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    
+    
+    <!-- ANGULAR -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script><!--Libreria de Angular-->
+    <script type="text/javascript" src="js/angular.js"></script><!-- Archivo JS de Angular--> 
+ 
+    
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"><!--Google fonts-->
+    
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--Iconos de Google-->
+    
+    <title>Tractocamiones SyQ</title>
+
+</head>
+    
+    
+
+     
+
+
+<body ng-controller="myCtrl">
+
+  <table >
+ 
+      <tr>
+      <th>Modelo</th>
+      <th>Precio</th>
+      <th>Tipo</th>
+      </tr>
+
+      <!-- Display records -->
+      <tr ng-repeat="c in caracteristicas">
+      <td>{{c.modelo}}</td>
+      <td>{{c.precio}}</td>
+      <td>{{c.tipo}}</td>
+      </tr>
+ 
+  </table>
+  
+    
+    
+
+<script type="text/javascript">
+    
+</script> 
+
+</body>
+</html>
